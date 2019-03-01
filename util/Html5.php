@@ -3,7 +3,7 @@
 <?php
 include 'fonc/intoBalise.php';
 
-function debutHtml(string $title = "index.php", string $css = null) : string
+function debutHtml(string $title = "index.php", string $css = null)
 {
 	$text = "<!-- encodage utf-8 -->";
 	$text .= intoBaliseN("meta", array("http-equiv= \"Content-Type\"","content=\"text/html; charset=utf-8\""));
@@ -17,7 +17,7 @@ function debutHtml(string $title = "index.php", string $css = null) : string
 }
 
 
-function finHtml() : string
+function finHtml() 
 {
        echo "\t</body>\n</html>\n";
 }

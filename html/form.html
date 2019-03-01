@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+       body {
+        	background-color: rgb(35,35,35);
+            color: rgb(220,220,220);
+       }
+
+        #contenue {
+		margin: 25px;
+       	padding: 20px;
+       	background-color: rgb(50,50,50);
+              height: 350px;
+              border-radius: 10px;
+       }
+
+	label {
+        	float: left;
+        	width: 25%;
+       	padding-top: 11px;
+       	text-align: center;
+       }
+
+       #form {
+        	float: left;
+        	width: 75%;
+        	padding-top: 6px;
+       }
+
+       #question {
+        	padding-bottom: 25px;
+       }
+
+       input[type="submit"], input[type="reset"] {
+        	margin: 10px;
+        	float: right;
+       }
+
+       select, input[type="text"]
+       {
+       	padding: 5px;
+       	width: 50%;
+              box-sizing: border-box;
+	}
+
+	</style>
+</head>
+<body>
+<h2>Formulaire de Reponse</h2>
+<div id="contenue">
+	<form action="index.php" method="post" >
+		<div id="question">
+			<label for="nom">Nom :</label>
+            <div id="form">
+    	    	<input type="text" name="nom">
+            </div>
+    	    <br>
+        </div>
+        <div id="question">
+ 	 		<label for="prenom">Prenom : </label>
+            <div id="form">
+        		<input type="text" name="prenom">
+            </div>
+        	<br>
+        </div>
+        <div id="question">
+        	<label for="ville">Ville : </label>
+            <div id="form">
+       	 		<select size="3" name="ville">
+        			<option value="Amiens" selected="selected" > Amiens </option>
+        			<option value="Bordeaux"> Bordeaux</option>
+        			<option value="Caen"> Caen</option>
+       		 	  	<option value="Lille"> Lille</option>
+       			</select>
+            </div>
+        	<br>
+        </div>
+        <div id="question">
+			<label for="musique[]">Musique :</label>
+            <div id="form">
+       			<input type="checkbox" name="musique[]" value="Classique" /> Classique <br>
+        		<input type="checkbox" name="musique[]" value="Jazz" /> Jazz<br>
+        		<input type="checkbox" name="musique[]" value="Rock" /> Rock<br>
+        		<input type="checkbox" name="musique[]" value="Pop" /> Pop<br>
+            </div>
+        	<br>
+        </div>
+        <div id="question">
+        	<label for="age">Tranche d'age : </label>
+            <div id="form">
+ 	        	<input type="radio" name="age" value="- 10 ans"/> - 10 ans <br>
+        		<input type="radio" name="age" value="entre 11 et 20 ans"/> entre 11 et 20 ans <br>
+        		<input type="radio" name="age" value="entre 21 et 40 ans" checked="checked" /> entre 21 et 40 ans<br>
+        		<input type="radio" name="age" value="entre 41 et + ans"/> entre 41 et + ans<br>
+            </div>
+        	<br>
+        </div>
+        <div id="question">
+        	<input type="submit" value="Valider" />
+        	<input type="reset" />
+        </div>
+	</form>
+</div>
+</body>
+</html>
