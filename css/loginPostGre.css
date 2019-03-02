@@ -1,9 +1,10 @@
 body {
        margin: auto;
-       width: 15%;
-       padding: 10%;
+       width: 300px;
+       padding-top: 200px;
        background-color: black;
        color: white;
+       overflow: visible;
 }
 
 h2, label {
@@ -34,7 +35,6 @@ input[type=submit], input[type=reset]{
        color: #aaa;
        width: 49%;
        padding: 6px 20px;
-       margin-left: 6%;
        margin: 8px 0;
        box-sizing: border-box;
        border: none;
