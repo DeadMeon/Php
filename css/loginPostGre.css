@@ -6,8 +6,9 @@ body {
        color: white;
 }
 
-h2 {
+h2, label {
        text-align: center;
+       color: #ccc;
 }
 
 input[type=text], input[type=password] {
@@ -29,19 +30,20 @@ input:focus {
 }
 
 input[type=submit], input[type=reset]{
-       background-color: #bbb;
+       background-color: #111;
+       color: #aaa;
        width: 49%;
        padding: 6px 20px;
        margin-left: 6%;
        margin: 8px 0;
        box-sizing: border-box;
        border: none;
-       border-bottom: 3px solid #ccc;
        -webkit-transition: 0.5s;
        transition: 0.5s;
        outline: none;
 }
 
 input[type=submit]:hover, input[type=reset]:hover{
-       background-color: #bbb;
+       background-color: #aaa;
+       color: black;
 }
