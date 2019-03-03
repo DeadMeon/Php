@@ -5,6 +5,7 @@ body {
        background-color: black;
        color: white;
        overflow: visible;
+       font-family: 'Raleway', sans-serif;
 }
 
 h2, label {
