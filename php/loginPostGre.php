@@ -7,12 +7,14 @@ function valideForm($method, $tabCles) {
 	return TRUE;
 }
 
-// noms des champs obligatoires
+include("html/loginPostGre.html");
 $tab = array('host', 'user', 'password');
 if (valideForm($_POST, $tab)) {
   include("php/connectPostGre.php");
+  include("html/connectPostGre.html");
+	sleep(10);
   include("php/request.php");
 } else {
-  include("html/loginPostGre.html");
+  include("html/errorPostGre.html");
 }
 ?>

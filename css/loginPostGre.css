@@ -8,7 +8,7 @@ body {
        font-family: 'Raleway', sans-serif;
 }
 
-h2, label {
+h2, label, h3 {
        text-align: center;
        color: #ccc;
 }
